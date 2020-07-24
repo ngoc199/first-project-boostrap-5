@@ -1,0 +1,28 @@
+.socials {
+  list-style: none;
+  padding: 0;
+
+  .social-item {
+    display: inline-block;
+    position: relative;
+    margin-right: 1rem;
+    height: 2.25rem;
+    width: 2.25rem;
+    background-color: $primary;
+    border-radius: 50%;
+    text-align: center;
+
+    .social-link {
+      padding: 0 !important;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 200ms ease;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

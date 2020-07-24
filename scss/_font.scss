@@ -1,0 +1,43 @@
+// Import fonts
+@font-face {
+  font-family: "DM";
+  src: url("/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik/Rubik-Regular.ttf") format("ttf");
+}
+
+// Font Style Mixins
+@mixin text-style(
+  $family,
+  $fallback: sans-serif,
+  $size: 1rem,
+  $weight: normal
+) {
+  font-family: $family, $fallback;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+// Font Style
+h1 {
+  @include text-style("DM", serif, 6.25rem, bold);
+}
+
+h2 {
+  @include text-style("DM", serif, 3rem, bold);
+}
+
+h3 {
+  @include text-style("DM", serif, 1.5rem, bold);
+}
+
+p {
+  @include text-style("Rubik", sans-serif, 1rem, 300);
+}
+
+.nav-link {
+  @include text-style("Rubik", sans-serif, 1rem, 300);
+}

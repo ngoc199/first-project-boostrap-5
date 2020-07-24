@@ -1,0 +1,25 @@
+header {
+  z-index: 1;
+}
+
+// Style on scroll
+header.scrolled {
+  background-color: $primary;
+  transition: background-color 200ms linear;
+
+  .nav-link {
+    color: $white;
+  }
+
+  .btn.btn-primary {
+    background-color: $white;
+    color: $primary;
+    transition: all 200ms ease-in;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+      border-color: $white;
+    }
+  }
+}
